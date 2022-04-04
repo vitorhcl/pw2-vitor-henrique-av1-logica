@@ -1,7 +1,12 @@
+import java.util.*;
+
 public class RadarRodoviario {
 	public static void main(String[] args) {
-		double freqCarro = 0.65;
-		int velLimite = 120;
+		Scanner ler = new Scanner(System.in);
+		System.out.println("Frequência do carro: ");
+		double freqCarro = ler.nextDouble();
+		System.out.println("Velocidade limite: ");
+		int velLimite = ler.nextInt();
 
 		double multa;
 		double velCarro = 300 * (1/freqCarro - 1);
